@@ -17,7 +17,7 @@ class ApplicationController < Sinatra::Base
   end
   
   post '/recipes/new' do
-    "recipe has been submitted"
+    @recipe = Recipe.create(params)
   end
 
 end
