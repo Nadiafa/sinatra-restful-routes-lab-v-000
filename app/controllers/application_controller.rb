@@ -7,5 +7,9 @@ class ApplicationController < Sinatra::Base
   get '/recipes/new' do
     erb :new 
   end
+  
+  post '/recipes/new' do
+    "recipe has been submitted"
+  end
 
 end
