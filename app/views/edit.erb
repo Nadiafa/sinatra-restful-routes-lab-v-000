@@ -1,6 +1,7 @@
 <h3>DISPLAY FORM WITH FIELDS TO EDIT A RECIPE FOUND BY ITS ID</h3>
 
 <form action='/recipes/<%= @recipe.id %>' method="POST">
+  <input id="hidden" type="hidden" name="_method" value="patch">
   <label for="name">Recipe Name: </label>
   <p><input type="text" name="name"/></p>
   <label for="ingredients">Ingredients: </label>
