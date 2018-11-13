@@ -4,14 +4,6 @@ class ApplicationController < Sinatra::Base
     set :views, 'app/views'
   end
   
-  get '/' do
-    erb :index
-  end
-  
-  get '/new' do 
-    erb :new 
-  end
-  
   get '/recipes/new' do
     erb :new 
   end
