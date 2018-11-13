@@ -1,9 +1,9 @@
 <h3>DISPLAY FORM WITH FIELDS TO EDIT A RECIPE FOUND BY ITS ID</h3>
 
 <h3> Your are editing:</h3>
-<h5><%= @recipe.name %></h5>
-<p></p>
-<p></p>
+<h5>Name: <%= @recipe.name %></h5>
+<p>Ingredients: <%= @recipe.ingredients %></p>
+<p>Cook Time: <%= @recipe.cook_time %></p>
 
 <form action='/recipes/<%= @recipe.id %>' method="POST">
   <input id="hidden" type="hidden" name="_method" value="patch">
