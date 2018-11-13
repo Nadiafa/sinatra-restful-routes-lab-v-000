@@ -1,10 +1,15 @@
 <h3>DISPLAY FORM WITH FIELDS TO EDIT A RECIPE FOUND BY ITS ID</h3>
 
-
-get '/recipes/:id/edit' do #loads edit form
-  @recipe = Recipe.find_by_id(params[:id])
-  erb :edit
-end
+<form action='/recipes/new' method="POST">
+  <label for="name">Recipe Name: </label>
+  <p><input type="text" name="name"/></p>
+  <label for="ingredients">Ingredients: </label>
+  <p><input type="text" name="ingredients"/></p>
+  <label for="cook_time">Cook Time: </label>
+  <p><input type="text" name="cook_time"/></p>
+  </br>
+  <input type="submit"/>
+</form>
 
 patch '/recipes/:id' do
   @recipe = Recipe.find_by_id(params[:id])
