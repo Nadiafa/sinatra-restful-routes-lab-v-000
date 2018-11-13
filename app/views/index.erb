@@ -1,13 +1,17 @@
 <h1>INDEX PAGE</h1>
 
-<h3>DISPLAY ALL RECIPES as a link to that recipe's page</h3>
-<p>With links next to each to edit or delete</p>
-<h3>SHOW LINK TO ADD NEW RECIPE</h3>
-<a href='new'>Add a new recipe</a>
-
+<h3>Saved Recipes:</h3>
 <ol>
   <% @recipes.each do |recipe| %>
-  <li><%= recipe.name %></li>
+  <li><a href=""><%= recipe.name %></a></li>
   <% end %>
 </ol>
+
+
+
+<p>With links next to each to edit or delete</p>
+<h3>SHOW LINK TO ADD NEW RECIPE</h3>
+<p><a href='new'>Add a New Recipe</a></p>
+
+
 
