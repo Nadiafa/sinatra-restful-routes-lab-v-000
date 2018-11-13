@@ -1,11 +1,11 @@
 <h1>INDEX PAGE</h1>
 
 <h3>DISPLAY ALL RECIPES</h3>
-<p>Could have links next to each to edit or delete</p>
+<p>Could have links next to each to the recipe page, and to edit or delete</p>
 <h3>SHOW LINK TO ADD NEW RECIPE</h3>
 <a href='new'>Add a new recipe</a>
 
-get '/' do
+get '/recipes' do
   erb :index 
 end 
 
